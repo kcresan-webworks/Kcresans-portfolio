@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <!-- logo -->
+    <div>
+        <a class="navbar-brand text-muted fs-3 pt-2" href="/index.html">ClOTh-<span class="text-danger">store</span></a>
+    </div>
+    <div class="container signup-main justify-content-center d-flex">
+
+        <!-- heading -->
+        <h1 class="text-center signup-heading"><b>sign up</b></h1>
+
+        <form action="" class="signup-form" onsubmit="security(); return false;">
+
+            <!-- name -->
+            <div class="inputbox name m-3">
+                <label for="fname">Name</label><br>
+                <input type="text" class="signup-input-name signup-input" id="fname" placeholder="Enter your Name" required>
+            </div>
+
+            <!-- email -->
+            <div class="inputbox mail m-3">
+                <label for="email">Email</label><br>
+                <input type="email" class="signup-input-emial signup-input" id="email" placeholder="Email" required>
+            </div>
+
+            <!-- password -->
+            <div class="inputbox password m-3">
+                <label for="pass">Password<b><span id="passError" class="text-danger"></span></b></label><br>
+                <div class="pass-div d-flex">
+                    <input type="password" class="signup-input-password signup-input pe-5" id="pass" placeholder="Create a Password" required>
+                    <img src="/eye-icons/eye-close.png" id="passIcon" class="img-fluid" alt="">
+                </div>
+                <div class="m-2 d-flex error-pass"><div id="characterStatus" class="status-circle justify-content-center me-2"></div>8 characters minimum</div>
+                <div class="m-2 d-flex error-pass"><div id="numberStatus" class="status-circle  justify-content-center me-2"></div>One number</div>
+                <div class="m-2 d-flex error-pass"><div id="uppercaseStatus" class="status-circle justify-content-center me-2"></div>One uppercase character</div>
+                <div class="m-2 d-flex error-pass"><div id="lowercaseStatus" class="status-circle justify-content-center me-2"></div>One lowercase character</div>
+                <div class="m-2 d-flex error-pass"><div id="specialStatus" class="status-circle justify-content-center me-2"></div>One special character</div>
+            </div>
+
+            <!-- button -->
+            <button class="signup-button p-2 m-3 btn btn-outline-danger" type="submit">CREATE ACCOUNT</button>
+
+            <div class="text-center">Already have an account? <a href="login.html" class="text-danger">Log in</a></p>
+        </form>
+    </div>
+</body>
+
+<script>
+    function security(){
+        event.preventDefault();
+
+        let password = document.getElementById("pass").value;
+
+        // Check and update the character status
+        let characterStatus = document.getElementById("characterStatus");
+        characterStatus.style.backgroundColor = password.length >= 8 ? 'green' : '#db0202';
+
+        let numberStatus = document.getElementById("numberStatus");
+        numberStatus.style.backgroundColor = /\d/.test(password) ? 'green' : '#db0202';
+
+        // Check and update the uppercase status
+        let uppercaseStatus = document.getElementById("uppercaseStatus");
+        uppercaseStatus.style.backgroundColor = /[A-Z]/.test(password) ? 'green' : '#db0202';
+
+        // Check and update the lowercase status
+        let lowercaseStatus = document.getElementById("lowercaseStatus");
+        lowercaseStatus.style.backgroundColor = /[a-z]/.test(password) ? 'green' : '#db0202';
+
+        // Check and update the special character status
+        let specialStatus = document.getElementById("specialStatus");
+        specialStatus.style.backgroundColor = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(password) ? 'green' : '#db0202';
+
+        // Add '*' error messages for the password
+        let passError = document.getElementById("passError");
+        passError.innerHTML = (password.length >= 8 && /\d/.test(password) && /[A-Z]/.test(password) && /[a-z]/.test(password) && /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(password)) ? '' : '*';
+    }
+
+    let eyeicon = document.getElementById("passIcon");
+    let pass = document.getElementById('pass');
+
+    eyeicon.onclick = function() {
+        if (pass.type === "password") {
+            pass.type = "text";
+            eyeicon.src = "/eye-icons/eye-open.png";
+        } else {
+            pass.type = "password";
+            eyeicon.src = "/eye-icons/eye-close.png";
+        }
+    };
+</script>
+
+</html>
+</html>

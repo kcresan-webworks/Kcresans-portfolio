@@ -1,0 +1,93 @@
+        @font-face {
+            font-family: futura;
+            src: url(fonts/futura\ light\ bt.ttf);
+        }
+        @font-face {
+            font-family: omegle;
+            src: url(/fonts/OmegleRegular-owopB.ttf);
+        }
+        .navbar-brand {
+            font-family: omegle;
+            margin: 2rem;
+        }
+        .signup-input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .signup-button{
+            width: 93%;
+            border-radius: 10px;
+
+        }
+        .signup-form{
+            width:30%;
+            top: 18%;
+            position: absolute;
+        }
+        .signup-heading{
+            position: absolute;
+            text-transform: uppercase;
+            top: 10%;
+        }
+        .error-pass{
+            font-size: 12px;
+        }
+        .status-circle{
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-top: 1.5%;
+            background-color: green;
+        }
+        #passIcon{
+            height: 15px !important;
+            position: absolute;
+            left: 89%;
+        }
+        .pass-div{
+            align-items: center;
+        }
+
+
+
+
+
+        @media only screen and (min-width: 935px) and (max-width: 1256px){
+            #passIcon{
+                left: 85% !important;
+            }
+        }
+
+
+
+
+        @media only screen and (min-width: 600px) and (max-width: 935px){
+            #passIcon{
+                left: 85% !important;
+            }
+            .signup-form{
+            width: 50%;
+            }
+        }
+
+
+
+
+        @media only screen and (min-width: 200px) and (max-width: 600px){
+            #passIcon{
+                left: 85% !important;
+            }
+            .signup-form{
+            width: 70%;
+            }
+        }
+        @media only screen and (min-width: 200px) and (max-width: 350px){
+            #passIcon{
+                left: 82% !important;
+            }
+            .signup-form{
+            width: 90%;
+            }
+        }
+        

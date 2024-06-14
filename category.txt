@@ -1,0 +1,52 @@
+men shirt //
+men t shirt  //
+men swaet shirt men //
+men jacket //
+men hoodie //
+men night wear //
+men jeans //
+men track suit //
+men shorts //
+men sport wears//
+men under wear //
+men shoes //
+men pants //
+men denim //
+belt /
+men watch //
+
+
+women shirt //
+women t shirt //
+women sweat shirt//
+women jacket //
+women hoodie //
+women night wear //
+women jeans //
+women leggins //
+women sport wear //
+women inner wear //
+women shoes //
+women pants //
+women denim //
+women watch //
+saree /
+gown //
+
+kids shirt //
+kids t shirt //
+kids sweatshirt //
+kids jacket //
+kids hoodie//
+kids night wear//
+kids jeans//
+kids daily wear //
+kids sports wear//
+kids inner wear//
+kids shoes//
+kids pants//
+kids demin//
+kids shorts//
+kids watch//
+
+SOCKS

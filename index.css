@@ -1,0 +1,305 @@
+/*navbar*/
+@font-face {
+    font-family: omegle;
+    src: url(fonts/OmegleRegular-owopB.ttf);
+}
+
+.navbar {
+    background: rgba(248, 249, 250, 0.8);
+}
+
+.navbar-brand {
+    font-family: omegle;
+}
+
+.nav-link {
+    color: rgb(33,37,41);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: rgb(220,53,69);
+}
+
+/*canvas*/
+@font-face {
+    font-family: futura;
+    src: url(fonts/futura\ light\ bt.ttf);
+}
+
+.canvas-link {
+    color: rgb(33,37,41);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.canvas-link:hover {
+    color: rgb(220,53,69);
+    font-weight: 600;
+    margin-left: 1vw;
+}
+
+
+/*slider image*/
+#image1text, #image2text, #image3text {
+    font-family: futura;
+    font-weight: 700;  
+}
+
+.carousel-caption {
+    top: 60%;
+    transform: translateY(-40%); 
+}
+
+#img1btn, #img2btn, #img3btn {
+    font-weight: 700;
+    margin-top: 5%;
+    padding: 1.5%;
+}
+
+#image1text, #image2text, #image3text {
+    margin-top: -5%;
+}
+
+/*category*/
+.mensimg {
+    display: block;
+}
+
+.thumbnail1 {
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.caption1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.thumbnail1:hover {
+    transform: scale(1.10);
+}
+
+
+@keyframes buttons {
+            100% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            0% {transform: scale(1);}
+        }
+
+
+/*key features*/
+.key-feature {
+    width: 100%;
+}
+
+.featureimg {
+    width: 5%;
+}
+
+.featuretext {
+    width: 28%;
+}
+
+.policy {
+    background-color: rgb(220,53,69);
+    color: white;
+    margin-top: 4%;
+}
+.policy:hover {
+    background: none;
+    color: rgb(220,53,69);
+}
+
+/*shop via category btn*/
+.shop-div {
+    padding-left: 35%;
+}
+
+.row-1 {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .set {
+    width: 16.6666666667%;
+    padding: 0% 3%;
+    margin: 0.7%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .set:hover {
+    transform: scale(1.10);
+  }
+
+  .category-caption {
+    font-size: 70%;
+    font-weight: 700;
+  }
+
+/*news letter*/
+#mailbox {
+    width: 50%;
+    margin-bottom: 7%;
+}
+
+#mail-submit-btn {
+    float: right;
+    margin-top: -5%;
+}
+
+/*footer*/
+
+#footer-main {
+    color: rgb(108,117,125);
+    background-color: rgb(248,249,250);
+}
+
+#footer {
+    width: 100%;
+    padding-left: 10%;
+    color: rgb(108,117,125);
+    background-color: rgb(248,249,250);
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.footer-link {
+    font-size: small;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    color: rgb(220,53,69);
+}
+
+.nolink-footer {
+    font-size: small;
+}
+
+.time {
+    margin-left: 10%;
+}
+
+.copy-right {
+    font-size: small;
+    float: left;
+}
+
+.developer {
+    font-size: small;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 567px) and (max-width: 1000px){
+
+    .categoryimg {
+        font-size: larger;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 567px) {
+
+    /*slidding image*/
+    .carousel {
+        margin-top: 16%;
+    }
+
+    .carousel-caption {
+        margin-top: -10%;
+    }
+
+    #image1text, #image2text, #image3text {
+        font-size: 130%;
+        margin-top: 5%;
+    }
+
+    #img1btn, #img2btn, #img3btn {
+        margin-top: -5%;
+        height: 15%;
+        width: 35%;
+        font-size: xx-small;
+        padding-bottom: 6%;
+    }
+
+    /*category*/
+    .categoryimg {
+        font-size: 60%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    #categories {
+        margin-top: -5%;
+    }
+
+    /*key features*/
+    .featuretext {
+        font-size: 50%;
+    }
+
+    .h4 {
+        font-size: 110%;
+    }
+
+    .policy {
+        font-size: 100%;
+    }
+
+    .kf {
+        margin-top: -5%;
+    }
+
+    /*shop via category btn*/
+    .shop-div {
+        margin-left: 0;
+        padding-left: 20%;
+        margin-top: -15%;
+    }
+
+    /*newslatter*/
+    #exampleInputEmail1 {
+        width: 200% !important;
+    }
+
+    #mailbox {
+        margin-left: 0 !important;
+    }
+
+    /*footer*/
+    #footer-main {
+        margin-top: 20%;
+    }
+
+    .footer-link, .nolink-footer, .copy-right, .developer {
+        font-size: xx-small;
+    }
+}

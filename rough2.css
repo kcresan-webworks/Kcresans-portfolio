@@ -1,0 +1,153 @@
+/*canvas*/
+@font-face {
+    font-family: futura;
+    src: url(fonts/futura\ light\ bt.ttf);
+  }
+  
+  .canvas-link {
+    color: rgb(33,37,41);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .canvas-link:hover {
+    color: rgb(220,53,69);
+    font-weight: 600;
+    margin-left: 1vw;
+  }
+  
+  /*navbar*/
+  @font-face {
+    font-family: omegle;
+    src: url(fonts/OmegleRegular-owopB.ttf);
+  }
+  
+  .navbar {
+    background: rgba(248, 249, 250, 0.8);
+  }
+  
+  .navbar-brand {
+    font-family: omegle;
+  }
+  
+  .nav-link {
+    color: rgb(33,37,41) !important;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .nav-link:hover {
+    color: rgb(220,53,69) !important;
+  }
+  
+  
+  /*content*/
+  @font-face {
+      font-family: font1;
+      src: url(/fonts/arial.ttf);
+  }
+  
+  .content-div {
+      margin-top: 7%;
+  }
+  
+  .h1 {
+      font-family: font1;
+      font-weight: 900 !important;
+  
+  }
+  
+  .heading-hr {
+      width: 40%;
+      margin-left: 30%;
+  }
+  
+  .img1 img{
+      width: 100%;
+  }
+  
+  .text1 {
+      width: 50%;
+  }
+  
+  .secondary-image-2 {
+      float: right;
+  }
+  
+  .hr-1 {
+      width: 70%;
+      margin-left: 15%;
+  }
+  
+  
+  
+    /*footer*/
+  
+    #footer-main {
+      color: rgb(108,117,125);
+      background-color: rgb(248,249,250);
+    }
+    
+    #footer {
+      width: 100%;
+      padding-left: 10%;
+      color: rgb(108,117,125);
+      background-color: rgb(248,249,250);
+      padding-top: 5%;
+      padding-bottom: 3%;
+    }
+    
+    .footer-link {
+      font-size: small;
+      text-decoration: underline;
+    }
+    
+    .footer-link:hover {
+      color: rgb(220,53,69);
+    }
+    
+    .nolink-footer {
+      font-size: small;
+    }
+    
+    .time {
+      margin-left: 10%;
+    }
+    
+    .copy-right {
+      font-size: small;
+      float: left;
+    }
+    
+    .developer {
+      font-size: small;
+      float: right;
+    }
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* @media only screen and (min-width: 200px) and (max-width: 767px){
+        .secondary-image-2, .secondary-image-1{
+            position: absolute;
+        }
+    } */

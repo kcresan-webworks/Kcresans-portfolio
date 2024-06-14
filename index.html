@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel="stylesheet" href="products.css">
+
+</head>
+
+<body>
+
+  <!--canvas-->
+    <div class="offcanvas offcanvas-start" id="demo">
+
+      <!--canvas heading-->
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title text-capitalize">go shopping</h1>
+            
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <!--canvas list-->
+        <div class="offcanvas-body">
+          <a href="#" class="we canvas-link text-decoration-none fs-5">mens</a><br><br>
+          <a href="#" class="we canvas-link text-decoration-none fs-5">womens</a><br><br>
+          <a href="#" class="we canvas-link text-decoration-none fs-5">kids</a><br><br>
+          <a href="#" class="we canvas-link text-decoration-none fs-5">shoes</a><br><br>
+          <a href="#" class="we canvas-link text-decoration-none fs-5">watches</a><br><br>
+          <a href="#" class="we canvas-link text-decoration-none fs-5">accessories</a><br><br>
+        </div>
+      </div>
+
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" >
+        <div class="container">
+          
+          <!--nav logo-->
+          <a class="navbar-brand text-muted fs-3 pt-2" href="#">ClOTh-<span class="text-danger">store</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--nav list-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item">
+                <a class="nav-link pt-3" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pt-3" href="blog.html">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pt-3" href="#">shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pt-3" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pt-3" href="#">contact</a>
+              </li>
+              <button class="btn btn-outline-danger ms-3 btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" type="submit">Go Shopping</button>
+            </ul>
+
+            <!--nav search-->
+            <form class="d-flex">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit"><img src="icons/magnifying-glass_151773.png" alt="" width="20"></button>
+            </form>
+            <!--nav cart & login-->
+            <button class="btn" type="submit"><img src="icons/shopping-cart_711897.png" alt="" width="22"></button>
+            <a href="profile/signup.html" class="btn" type="submit"><img src="icons/user_552721.png" alt="" width="22"></a>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--slider image-->
+      <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <!--image 1-->
+          <div class="carousel-item active">
+            <img src="images/[fpdl.in]_man-woman-are-standing-each-other-wearing-suit-hat_853645-3537_large (2).jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h1 id="image1text" class="display-4 text-uppercase">get upto 20% off <br>on new arrivals</h5>
+              <a href="rough2.html" id="img1btn" class="btn btn-danger ms-3 btn-md text-uppercase" type="button">shop now</a>  
+            </div>
+          </div>
+
+          <!--image 2-->
+          <div class="carousel-item">
+            <img src="images/[fpdl.in]_group-beautiful-girls-boys_155003-8333_large.jpg" id="#image2text" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 id="image2text" class="display-4 text-uppercase ">find the latest trend <br>for your kids</h5>
+              <button id="img2btn" class="btn btn-danger ms-3 btn-md text-uppercase" type="button">checkout</button>  
+            </div>
+          </div>
+
+          <!--image 3-->
+          <div class="carousel-item">
+            <img src="images/[fpdl.in]_patriotic-card-with-composition-different-elements-colors-flag-usa-4th-july-space-text_136403-17737_large.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5 id="image3text" class="display-4 text-uppercase">accessories on limited <br>stock, hurry up!!</h5>
+              <button id="img3btn" class="btn btn-danger ms-3 btn-md text-uppercase" type="button">get it now</button>  
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!--categories--> 
+    <div class="container-fluid d-flex mb-5" id="categories">
+
+        <!--image 1-->
+        <div class=" thumbnail1 d-block text-center">
+          <a href=""><img class="img-thumbnail m-3" width="80%" src="images/[fpdl.in]_portrait-handsome-confident-stylish-hipster-lambersexual-modelman-dressed-green-sweater-jeans-fashion-male-posing-studio-near-blue-wall_158538-24057_large.jpg" alt="" ></a>
+          <div class="caption1">
+              <p class="text-uppercase text-light h1 categoryimg">mens</p>
+          </div>
+      </div>
+        
+        <!--image 2-->
+        <div class=" thumbnail1 d-block text-center">
+            <a href=""><img class="img-thumbnail m-3" width="80%" src="images/[fpdl.in]_excited-white-girl-bright-stylish-glasses-posing-pink-dreamy-curly-woman-playing-with-her-ginger-hair-laughing_197531-11045_large.jpg" alt="" ></a>
+            <div class="caption1">
+                <p class="text-uppercase text-light h1 categoryimg">womens</p>
+            </div>
+        </div>
+
+        <!--image 3-->
+        <div class=" thumbnail1 d-block text-center">
+            <a href=""><img class="img-thumbnail m-3" width="80%" src="images/[fpdl.in]_happy-childhood-vibrant-colors_52683-100296_large.jpg" alt="" ></a>
+            <div class="caption1">
+                <p class="text-uppercase text-light h1 categoryimg">kids</p>
+            </div>
+        </div>
+
+        <!--iamge 4-->
+        <div class=" thumbnail1 d-block text-center">
+            <a href=""><img class="img-thumbnail m-3" width="80%" src="images/[fpdl.in]_clothing-women-placed-wooden-floor_11304-1123_large (1).jpg" alt="" ></a>
+            <div class="caption1">
+                <p class="text-uppercase text-light h2 categoryimg">accessories</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--key features-->
+    <!--row 1-->
+    <div class="container key-feature d-flex kf">
+
+      <!--feature 1-->
+      <div class="featureimg">
+        <img src="icons/quality_1212158.png" alt="" width="80%">
+      </div>
+      <div class="featuretext">
+        <p class="text-muted"><span class="h4 text-capitalize text-dark">product quality</span><br><br>Discover unrivaled quality in every stitch. Our clothing is a testament to craftsmanship, using the finest materials to create enduring, stunning pieces.</p>
+      </div>
+
+      <!--feature 2-->
+      <div class="featureimg">
+        <img src="icons/clothes-hanger_3159667.png" alt="" width="80%">
+      </div>
+      <div class="featuretext">
+        <p class="text-muted"><span class="h4 text-capitalize text-dark">Aesthetic Appeal</span><br><br>Experience the art of fashion with [Your Brand Name]. Our designs are a reflection of timeless elegance, boasting a seamless blend of beauty and style. Explore a world of visual allure that speaks to your unique taste.</p>
+      </div>
+
+      <!--feature 3-->
+      <div class="featureimg">
+        <img src="icons/star_471658.png" alt="" width="80%">
+      </div>
+      <div class="featuretext">
+        <p class="text-muted"><span class="h4 text-capitalize text-dark">Unique Selling Proposition</span><br><br>Celebrate individuality with <span class="text-dark">CloTh-store</span>. Our unique designs, commitment to sustainability, and exceptional customer service make us your go-to destination for one-of-a-kind fashion.</p>
+      </div>
+
+    </div>
+
+        <!--row 2-->
+    <div class="container key-feature d-flex ">
+
+      <!--feature 4-->
+      <div class="featureimg">
+        <img src="icons/shipped_411763.png" alt="" width="80%">
+      </div>
+      <div class="featuretext">
+        <p class="text-muted"><span class="h4 text-capitalize text-dark">shipping</span><br><br>Swift and Reliable Shipping: Get your favorite styles delivered to your doorstep with our fast and dependable shipping service. We prioritize your convenience and ensure your order reaches you in no time.</p>
+      </div>
+
+      <!--feature 5-->
+      <div class="featureimg">
+        <img src="icons/product-return_4989753.png" alt="" width="80%">
+      </div>
+      <div class="featuretext">
+        <p class="text-muted"><span class="h4 text-capitalize text-dark">return</span><br><br>Easy Returns: We've got you covered. If for any reason you're not satisfied with your purchase, our hassle-free return process ensures your complete peace of mind. <br><span class="policy text-capitalize btn">return policy</span></p>
+      </div>
+
+      <!--feature 6-->
+      <div class="featureimg">
+        <img src="icons/transfer_876784.png" alt="" width="80%">
+      </div>
+      <div class="featuretext">
+        <p class="text-muted"><span class="h4 text-capitalize text-dark">exchange</span><br><br>Change your mind? No worries! Our hassle-free exchange policy ensures you get the perfect fit and style. Your satisfaction is our priority. <br><span class="policy text-capitalize btn">exchange policy</span></p>
+      </div>
+
+    </div>    
+
+
+    <!--featured products-->
+<section class="section-products">
+	<div class="container">
+		<div class="row justify-content-center text-center">
+    		<div class="col-md-8 col-lg-6">
+				<div class="header">
+        			<h3>Featured Product</h3>
+					<h2>Popular Products</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- Single Product -->
+            <!--product 1-->
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div id="product-1" class="single-product">
+					<div class="part-1">
+						<ul>
+							<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+							<li><a href="#"><i class="fas fa-heart"></i></a></li>
+							<li><a href="#"><i class="fas fa-plus"></i></a></li>
+							<li><a href="#"><i class="fas fa-expand"></i></a></li>
+				    	</ul>
+			    	</div>
+                    
+                    <!--product 1 caption-->
+					<div class="part-2">
+						<h3 class="product-title">Mens Watch</h3>
+						<h4 class="product-old-price">$30.99</h4>
+						<h4 class="product-price">$20.99</h4>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single Product -->
+            <!--product 2-->
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div id="product-2" class="single-product">
+					<div class="part-1">
+						<span class="discount">15% off</span>
+						<ul>
+							<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+							<li><a href="#"><i class="fas fa-heart"></i></a></li>
+							<li><a href="#"><i class="fas fa-plus"></i></a></li>
+							<li><a href="#"><i class="fas fa-expand"></i></a></li>
+						</ul>
+					</div>
+
+                    <!--product 2 caption-->
+					<div class="part-2">
+						<h3 class="product-title">Ladies Handbag</h3>
+						<h4 class="product-price">$49.99</h4>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single Product -->
+            <!--product 3-->
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div id="product-3" class="single-product">
+					<div class="part-1">
+						<ul>
+							<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+							<li><a href="#"><i class="fas fa-heart"></i></a></li>
+							<li><a href="#"><i class="fas fa-plus"></i></a></li>
+							<li><a href="#"><i class="fas fa-expand"></i></a></li>
+						</ul>
+					</div>
+
+                    <!--product 3 caption-->
+					<div class="part-2">
+						<h3 class="product-title">Unisex Sports Shoe</h3>
+						<h4 class="product-old-price">$49.99</h4>
+						<h4 class="product-price">$29.99</h4>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single Product -->
+            <!--product 4-->
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				
+                <div id="product-4" class="single-product">
+					<div class="part-1">
+						<span class="new">new</span>
+						<ul>
+						    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+							<li><a href="#"><i class="fas fa-heart"></i></a></li>
+							<li><a href="#"><i class="fas fa-plus"></i></a></li>
+							<li><a href="#"><i class="fas fa-expand"></i></a></li>
+						</ul>
+					</div>
+
+                    <!--product 4 caption-->
+				    <div class="part-2">
+					<h3 class="product-title">Kids Daily Wear (Set of 2)</h3>
+					<h4 class="product-price">$10.99</h4>
+				    </div>
+			    </div>
+		    </div>
+
+		    <!-- Single Product -->
+            <!--product 5-->
+		    <div class="col-md-6 col-lg-4 col-xl-3">
+		    	<div id="product-5" class="single-product">
+		    		<div class="part-1">
+				    	<ul>
+				    		<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+				    		<li><a href="#"><i class="fas fa-heart"></i></a></li>
+				    		<li><a href="#"><i class="fas fa-plus"></i></a></li>
+				    		<li><a href="#"><i class="fas fa-expand"></i></a></li>
+				    	</ul>
+			    	</div>
+
+                    <!--product 5 caption-->
+			       <div class="part-2">
+			    		<h3 class="product-title">Mens Leather Jacket</h3>
+			    		<h4 class="product-old-price">$49.99</h4>
+				    	<h4 class="product-price">$19.99</h4>
+				    </div>
+		    	</div>
+	    	</div>
+
+		    <!-- Single Product -->
+            <!--product 6-->
+		    <div class="col-md-6 col-lg-4 col-xl-3">
+		    	<div id="product-6" class="single-product">
+					<div class="part-1">
+						<span class="discount">15% off</span>
+						<ul>
+						    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+						    <li><a href="#"><i class="fas fa-heart"></i></a></li>
+						    <li><a href="#"><i class="fas fa-plus"></i></a></li>
+							<li><a href="#"><i class="fas fa-expand"></i></a></li>
+						</ul>
+					</div>
+
+                    <!--product 6 caption-->
+					<div class="part-2">
+						<h3 class="product-title">Girls Momfit Jeans</h3>
+						<h4 class="product-price">$10.99</h4>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single Product -->
+            <!--product 7-->
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div id="product-7" class="single-product">
+					<div class="part-1">
+						<ul>
+							<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+							<li><a href="#"><i class="fas fa-heart"></i></a></li>
+							<li><a href="#"><i class="fas fa-plus"></i></a></li>
+							<li><a href="#"><i class="fas fa-expand"></i></a></li>
+						</ul>
+					</div>
+
+                    <!--product 7 caption-->
+					<div class="part-2">
+						<h3 class="product-title">Boys Cowboy Boots</h3>
+						<h4 class="product-old-price">$79.99</h4>
+						<h4 class="product-price">$49.99</h4>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single Product -->
+            <!--product 8-->
+			<div class="col-md-6 col-lg-4 col-xl-3">
+				<div id="product-8" class="single-product">
+					<div class="part-1">
+						<span class="new">new</span>
+						<ul>
+							<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+							<li><a href="#"><i class="fas fa-heart"></i></a></li>
+							<li><a href="#"><i class="fas fa-plus"></i></a></li>
+							<li><a href="#"><i class="fas fa-expand"></i></a></li>
+						</ul>
+					</div>
+
+                    <!--product 8 caption-->
+					<div class="part-2">
+						<h3 class="product-title">Kids Jumpsuit</h3>
+						<h4 class="product-price">$18.99</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--shop via categories-->
+<div class="shop-div container justify-content-center">
+  <a href="#collapse1" class="text-capitalize btn-outline-danger btn btn-md px-3 mb-5" role="button" aria-expanded="false" aria-control ="collapse1" data-bs-toggle="collapse">shop via categories</a>
+</div>
+
+  <!--collapsing category-->
+  <div class="container collapse multi-collapse" id="collapse1">
+
+    <!--row 1-->
+    <div class="d-flex row-1 pt-5">
+      <!--row 1 col-1-->
+      <div class="row-1-col-1 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/portrait-handsome-young-businessman.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">MENS SHIRT</p>
+      </div>
+
+      <!--row 1 col 2-->
+      <div class="row-1-col-2 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Huiketi White Shirts for Women Top Turn-down Collar Solid Female Shirts Casual Office Ladies Tops 2023 Spring Summer Blouses 11354 - Black _ XXL.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">WOMENS SHIRT</p>
+      </div>
+
+      <!--row 1 col 3-->
+      <div class="row-1-col-3 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/MOMOLAND Toddler Boys Short Sleeves Button Down Shirt Linen Design.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">KIDS SHIRT</p>
+      </div>
+
+      <!--row 1 col 4-->
+      <div class="row-1-col-4 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_colorful-tshirt-template-man-with-yellow-green-red-orange-grey-tshirt-design-with-white-background_873925-126821_normal.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">MENS T-SHIRT</p>
+      </div>
+
+      <!--row 1 col 5-->
+      <div class="row-1-col-5 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/SweatyRocks Women's Summer Short Sleeve Crop Top T-Shirt Tie Front Blouse Top.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">WOMENS T-SHIRT</p>
+      </div>
+
+      <!--row 1 col 6-->
+      <div class="row-1-col-6 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Toddler Cotton Graffiti Print T-Shirt Short Sleeve - 20 _ 110 3-4T.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">KIDS T-SHIRT</p>
+      </div>
+    </div>
+
+
+     <!--row 2-->
+     <div class="d-flex row-1">
+      <!--row 2 col-1-->
+      <div class="row-2-col-1 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_white-hoodie-with-caucasian-man-shirt-design-fashionable-clothes-branding-advertising-mix_968381-149_normal.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">MENS SWEATSHIRT</p>
+      </div>
+
+      <!--row 2 col 2-->
+      <div class="row-2-col-2 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Casual Fashion Printing Thickened Versatile Top Sweatshirt - Dark Green _ XXL.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">WOMENS SWEATSHIRT</p>
+      </div>
+
+      <!--row 2 col 3-->
+      <div class="row-2-col-3 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Boys Slogan Graphic Colorblock Drop Shoulder Hoodie.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">KIDS SWEATSHIRT</p>
+      </div>
+
+      <!--row 2 col 4-->
+      <div class="row-2-col-4 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_illustration_987030-1885_normal.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">MENS JACKET</p>
+      </div>
+
+      <!--row 2 col 5-->
+      <div class="row-2-col-5 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/22 Inexpensive Light Jackets To Add To Your Closet This Spring.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">WOMENS JACKET</p>
+      </div>
+
+      <!--row 2 col 6-->
+      <div class="row-2-col-6 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Toddler Boys Colorblock Zip Up Teddy Hooded Jacket & Pants Without Sweater.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">KIDS JACKET</p>
+      </div>
+    </div>
+
+
+    <!--row 3-->
+    <div class="d-flex row-1">
+      <!--row 3 col-1-->
+      <div class="row-3-col-1 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_bff-printed-red-hoodie_53876-105408_normal.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">MENS HOODIE</p>
+      </div>
+
+      <!--row 3 col 2-->
+      <div class="row-3-col-2 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Is That The New Kangaroo Pocket Letter Embroidery Drawstring Hoodie __.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">WOMENS HOODIE</p>
+      </div>
+
+      <!--row 3 col 3-->
+      <div class="row-3-col-3 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Solid Color Hoodie And Pants - Green Pants _ 7-8T.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">KIDS HOODIE</p>
+      </div>
+
+      <!--row 3 col 4-->
+      <div class="row-3-col-4 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Mens Pyjamas & Nightwear _ Mens Loungewear, PJs & Robes.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">MENS NIGHT WEAR</p>
+      </div>
+
+      <!--row 3 col 5-->
+      <div class="row-3-col-5 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Sexy Women's Footie Pajamas, Plus Size Sleepwear Nightgowns.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">WOMENS NIGHT WEAR</p>
+      </div>
+
+      <!--row 3 col 6-->
+      <div class="row-3-col-6 set">
+        <a href="#">
+          <img class="image-fluid rounded-circle" src="category image/Lamb Print Lace Trim Top & Pants Pj Set.jpg" alt="" width="100%">
+        </a>
+        <p class="category-caption text-center">KIDS NIGHT WEAR</p>
+      </div>
+    </div>
+
+
+        <!--row 4-->
+        <div class="d-flex row-1">
+          <!--row 4 col-1-->
+          <div class="row-4-col-1 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Lamb Print Lace Trim Top & Pants Pj Set.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS JEANS</p>
+          </div>
+    
+          <!--row 4 col 2-->
+          <div class="row-4-col-2 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/STRAIGHT JEAN - L.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS JEANS</p>
+          </div>
+    
+          <!--row 4 col 3-->
+          <div class="row-4-col-3 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Boys Cartoon Cars Jeans Embroidery Elastic Waist With Pockets Denim Casual Kids Clothes.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS JEANS</p>
+          </div>
+    
+          <!--row 4 col 4-->
+          <div class="row-4-col-4 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/1026e4b5-7be8-47c6-bdc3-85be603a0b0c.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS TRACKSUIT</p>
+          </div>
+    
+          <!--row 4 col 5-->
+          <div class="row-4-col-5 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/High Waist Pure Legging - extra large _ black.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS LEGGINS</p>
+          </div>
+    
+          <!--row 4 col 6-->
+          <div class="row-4-col-6 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/CNJFJ Kids Summer Sport T-Shirt and Shorts Set Plaid Print Clothing Sets Tracksuit.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS DAILY WEAR</p>
+          </div>
+        </div>
+
+
+        <!--row 5-->
+        <div class="d-flex row-1">
+          <!--row 5 col-1-->
+          <div class="row-5-col-1 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/man-stretching-leg.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS SPORTS WEAR</p>
+          </div>
+    
+          <!--row 5 col 2-->
+          <div class="row-5-col-2 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Women's Gym Leggings & Tights _ P_E Nation.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS SPORTS WEAR</p>
+          </div>
+    
+          <!--row 5 col 3-->
+          <div class="row-5-col-3 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/PAIRFORMANCE Boys' Soccer Jerseys Sports Team Training Uniform Age 6-12 Boys-Girls Youth Shirts and Shorts Set Indoor Soccer_.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS SPORTS WEAR</p>
+          </div>
+    
+          <!--row 5 col 4-->
+          <div class="row-5-col-4 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_man-wearing-gray-boxers_53876-102058_large.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS INNER WEAR</p>
+          </div>
+    
+          <!--row 5 col 5-->
+          <div class="row-5-col-5 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/ca1c6e26-0419-4bcd-a6f9-e6c08ada3241.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS INNER WEAR</p>
+          </div>
+    
+          <!--row 5 col 6-->
+          <div class="row-5-col-6 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/8 Colors Size 100-150 Children Tanks 2-10 Years Boys Girls Cotton Camisoles Tops Kids All Season Inner Wear Clothes C6ssK-2-3T size 100.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS INNER WEAR</p>
+          </div>
+        </div>
+
+
+        <!--row 6-->
+        <div class="d-flex row-1">
+          <!--row 6 col-1-->
+          <div class="row-6-col-1 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_brown-leather-shoes_1203-8175_large.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS SHOES</p>
+          </div>
+    
+          <!--row 6 col 2-->
+          <div class="row-6-col-2 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/25 Stylish Things That'll Make You Think _Damn That's Cute, Amazon_.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS SHOES</p>
+          </div>
+    
+          <!--row 6 col 3-->
+          <div class="row-6-col-3 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Enjoy $10_00 off on this product from PatPat _ Kids' Apparel App  -  Super Cute, Super Fun.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS SHOES</p>
+          </div>
+    
+          <!--row 6 col 4-->
+          <div class="row-6-col-4 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_low-section-man-standing-rock-against-blue-sky_23-2148182853_large.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS PANTS</p>
+          </div>
+    
+          <!--row 6 col 5-->
+          <div class="row-6-col-5 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/1b9e1c24-1a50-4e8f-ab01-c6b632d3529a.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS PANTS</p>
+          </div>
+    
+          <!--row 6 col 6-->
+          <div class="row-6-col-6 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Boys Comfy & Breathable Long Pants - 90 (12-24M) _ Navy Blue (Dark Blue).jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS PANTS</p>
+          </div>
+        </div>
+
+
+        <!--row 7-->
+        <div class="d-flex row-1">
+          <!--row 7 col-1-->
+          <div class="row-7-col-1 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_portrait-handsome-confident-stylish-hipster-lambersexual-model-with-curly-hairstyle-sexy-man-dressed-jeans-jacket-fashion-male-isolated-white-wall-studio_158538-26608_large.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS DENIM</p>
+          </div>
+    
+          <!--row 7 col 2-->
+          <div class="row-7-col-2 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Long Sleeve Cropped Denim Jackets, Black Button Closure Flap Pockets Denim Coats, Women's Denim & Clothing.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS DENIM</p>
+          </div>
+    
+          <!--row 7 col 3-->
+          <div class="row-7-col-3 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Girls Little Big Kids Distressed BF Jeans Cotton Denim Bib Overalls Summer Shortalls 1P.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS DENIM</p>
+          </div>
+    
+          <!--row 7 col 4-->
+          <div class="row-7-col-4 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Noble.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS WATCH</p>
+          </div>
+    
+          <!--row 7 col 5-->
+          <div class="row-7-col-5 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Luxury Women Bracelet Quartz Watches - Magnet Black Set.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">WOMENS WATCH</p>
+          </div>
+    
+          <!--row 7 col 6-->
+          <div class="row-7-col-6 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/7 Gadgets That Will Help Your Kids Have a Free-Range, '80s-Style Summer.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS WATCH</p>
+          </div>
+        </div>
+
+        
+        <!--row 8-->
+        <div class="d-flex row-1">
+          <!--row 8 col-1-->
+          <div class="row-8-col-1 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_man-wearing-beige-shorts-close-up_53876-125260_large.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">MENS SHORTS</p>
+          </div>
+    
+          <!--row 8 col 2-->
+          <div class="row-8-col-2 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Small and Medium-Sized Children Wear Shorts, Baby Five-Point Pants, Summer Tide Pants - Green _ 130cm.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">KIDS SHORTS</p>
+          </div>
+    
+          <!--row 8 col 3-->
+          <div class="row-8-col-3 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/c1d721e9-d7eb-4601-beed-7cf20c615f51.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">GOWN</p>
+          </div>
+    
+          <!--row 8 col 4-->
+          <div class="row-8-col-4 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/Blush Pink Embroidered Saree Set Design by Kalighata at Pernia's Pop Up Shop 2023.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">SAREE</p>
+          </div>
+    
+          <!--row 8 col 5-->
+          <div class="row-8-col-5 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/[fpdl.in]_leather-belt_74190-2615_large.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">BELT</p>
+          </div>
+    
+          <!--row 8 col 6-->
+          <div class="row-8-col-6 set">
+            <a href="#">
+              <img class="image-fluid rounded-circle" src="category image/UNDERWATER Socks Apricot.jpg" alt="" width="100%">
+            </a>
+            <p class="category-caption text-center">SOCKS</p>
+          </div>
+        </div>
+
+  </div>
+
+<!--sale banner-->
+<div class="container-fluid">
+  <img class="image-fluid mt-5 mb-3" src="images/seasonal sale.jpg" alt="" width="100%">
+</div>
+
+<!--news letter-->
+<div class="container">
+  <p class="h2 text-center mt-5 mb-3">Subscribe to our mail list for the later updates and offer</p>
+</div>
+
+<form class="container justify-content-center"  id="mailbox">
+  <div class="mb-3 ">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Email address">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <button type="submit" class="btn btn-outline-danger justify-content-end" id="mail-submit-btn">Submit</button>
+</form>
+
+
+<!--footer-->
+<div id="footer-main">
+  <div class="container-fluid d-flex row" id="footer">
+    <div class="col-3">
+      <p class="text-uppercase h6">location</p><br>
+      <a href="#" class="text-capitalize footer-link">location from <br> google map</a>
+    </div>
+  
+    <div class="col-3">
+      <p class="text-uppercase h6">Privacy & policy</p><br>
+      <a href="" class="footer-link">Return Policy</a><br>
+      <a href="" class="footer-link">Exchange Policy</a><br>
+      <a href="" class="footer-link">Refund Policy</a><br>
+      <a href="" class="footer-link">Cancellation Policy</a><br>
+      <a href="" class="footer-link">Damaged or Defective Items</a><br>
+      <a href="" class="footer-link">Terms and Conditions</a><br>
+      <a href="" class="footer-link">Customer Support</a>
+    </div>
+    <div class="col-3">
+      <p class="text-uppercase h6">for support</p><br>
+      <p class="nolink-footer"><img src="icons/clock_992700.png" class="me-2" alt="" width="7%">Monday to Saturday <br><span class="time">8.30 am to 5.30 pm</span></p>
+      <p class="nolink-footer"><img src="icons/telephone_159832.png" class="me-2" alt="" width="7%">+91 000 000 0000 / <br><span class="time">+91 000 000 0000</span></p>
+      <p class="nolink-footer"><img src="icons/whatsapp_1384023.png" class="me-2" alt="" width="7%">+91 000 000 0000</p>
+      <p class="nolink-footer"><img src="icons/mail_646094.png" class="me-2" alt="" width="7%">cloth.store@gmail.com</p>
+    </div>
+  
+    <div class="col-3">
+      <p class="text-uppercase h6">socials</p><br>
+      <a href=""><img src="icons/facebook_1077041.png" alt="" width="10%" class="m-3"></a>
+      <a href=""><img src="icons/instagram.png" alt="" width="10%" class="m-3"></a>
+      <a href=""><img src="icons/twitter.png" alt="" width="10%" class="m-3"></a><br>
+      <a href=""><img src="icons/pinterest.png" alt="" width="10%" class="m-3"></a>
+      <a href=""><img src="icons/linkedin.png" alt="" width="10%" class="m-3"></a>
+      <a href=""><img src="icons/youtube.png" alt="" width="10%" class="m-3"></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="copy-right">CloTh-store © 2023. All Rights Reserved.</p>
+    <p class="developer">Devoloped by : <a href="">kcresan.com</a></p>
+  </div>
+</div>
+
+
+</body>
+</html>
